@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --psc-pink: #EC4899;
+  --psc-pink-deep: #D6297E;
+  --psc-blue: #2B9BE0;
+  --psc-blue-deep: #1877C9;
+  --psc-navy: #0C1A4B;
+  --psc-ink: #16223f;
+  --psc-muted: #5b6785;
+  --psc-cloud: #f5f8fd;
+  --psc-line: #e7edf6;
+  --psc-shadow: 0 10px 30px -12px rgba(12, 26, 75, 0.18);
+  --psc-shadow-lg: 0 24px 60px -20px rgba(12, 26, 75, 0.28);
+}
+
+body {
+  font-family: 'Prompt', 'Kanit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--psc-ink);
+  background-color: var(--psc-cloud);
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Kanit', 'Prompt', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+button, input, select, textarea {
+  font-family: 'Prompt', 'Kanit', system-ui, sans-serif;
+}
+
+.font-kanit {
+  font-family: 'Kanit', sans-serif !important;
+}
+
+.font-prompt {
+  font-family: 'Prompt', sans-serif !important;
+}
+
+/* Custom PSC2023 Gradients & Button Classes */
+.btn-psc-primary {
+  font-family: 'Kanit', 'Prompt', sans-serif;
+  background: linear-gradient(135deg, var(--psc-pink), var(--psc-pink-deep));
+  color: #ffffff;
+  box-shadow: 0 10px 24px -10px rgba(214, 41, 126, 0.55);
+  transition: all 0.2s ease;
+}
+
+.btn-psc-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px -10px rgba(214, 41, 126, 0.65);
+}
+
+.btn-psc-secondary {
+  font-family: 'Kanit', 'Prompt', sans-serif;
+  background: linear-gradient(135deg, var(--psc-blue), var(--psc-blue-deep));
+  color: #ffffff;
+  box-shadow: 0 10px 24px -10px rgba(24, 119, 201, 0.55);
+  transition: all 0.2s ease;
+}
+
+.btn-psc-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px -10px rgba(24, 119, 201, 0.65);
+}
+
+.psc-hero-gradient {
+  background: 
+    radial-gradient(1100px 600px at 80% -10%, rgba(43, 155, 224, 0.16), transparent 60%),
+    radial-gradient(900px 600px at 5% 110%, rgba(236, 72, 153, 0.14), transparent 55%),
+    linear-gradient(180deg, #fbfcff, #ffffff);
+}
+

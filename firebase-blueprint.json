@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PSC Classroom Booking Firestore Blueprint",
+  "entities": {
+    "rooms": {
+      "description": "PSC Classrooms and Labs",
+      "fields": {
+        "id": { "type": "string" },
+        "code": { "type": "string" },
+        "name": { "type": "string" },
+        "building": { "type": "string" },
+        "floor": { "type": "string" },
+        "capacity": { "type": "number" },
+        "roomType": { "type": "string" },
+        "status": { "type": "string" },
+        "equipments": { "type": "array" },
+        "image": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "bookings": {
+      "description": "Classroom Booking Records",
+      "fields": {
+        "id": { "type": "string" },
+        "roomId": { "type": "string" },
+        "roomCode": { "type": "string" },
+        "roomName": { "type": "string" },
+        "building": { "type": "string" },
+        "requestedBy": { "type": "string" },
+        "userRole": { "type": "string" },
+        "contactNumber": { "type": "string" },
+        "date": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "startTime": { "type": "string" },
+        "endTime": { "type": "string" },
+        "purpose": { "type": "string" },
+        "equipmentNeeded": { "type": "array" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "rejectedReason": { "type": "string" },
+        "approvedBy": { "type": "string" },
+        "department": { "type": "string" },
+        "attendeesCount": { "type": "number" }
+      }
+    }
+  }
+}
